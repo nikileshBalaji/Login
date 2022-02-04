@@ -18,6 +18,8 @@
 		89864BB427AC7B93003CAAFE /* Login_FlipgridUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89864BB327AC7B93003CAAFE /* Login_FlipgridUITestsLaunchTests.swift */; };
 		89864BC427AC9D8C003CAAFE /* LoginTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89864BC327AC9D8C003CAAFE /* LoginTextField.swift */; };
 		89864BC527AC9D8C003CAAFE /* LoginTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89864BC327AC9D8C003CAAFE /* LoginTextField.swift */; };
+		89864BCA27AD895D003CAAFE /* LoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89864BC927AD895D003CAAFE /* LoginButton.swift */; };
+		89864BCB27AD895D003CAAFE /* LoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89864BC927AD895D003CAAFE /* LoginButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +54,7 @@
 		89864BB127AC7B93003CAAFE /* Login_FlipgridUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login_FlipgridUITests.swift; sourceTree = "<group>"; };
 		89864BB327AC7B93003CAAFE /* Login_FlipgridUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login_FlipgridUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		89864BC327AC9D8C003CAAFE /* LoginTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTextField.swift; sourceTree = "<group>"; };
+		89864BC927AD895D003CAAFE /* LoginButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +154,7 @@
 			isa = PBXGroup;
 			children = (
 				89864BC327AC9D8C003CAAFE /* LoginTextField.swift */,
+				89864BC927AD895D003CAAFE /* LoginButton.swift */,
 			);
 			path = UIModels;
 			sourceTree = "<group>";
@@ -287,6 +291,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				89864B9527AC7B92003CAAFE /* ViewController.swift in Sources */,
+				89864BCA27AD895D003CAAFE /* LoginButton.swift in Sources */,
 				89864BC427AC9D8C003CAAFE /* LoginTextField.swift in Sources */,
 				89864B9127AC7B92003CAAFE /* AppDelegate.swift in Sources */,
 				89864B9327AC7B92003CAAFE /* SceneDelegate.swift in Sources */,
@@ -298,6 +303,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				89864BA827AC7B93003CAAFE /* Login_FlipgridTests.swift in Sources */,
+				89864BCB27AD895D003CAAFE /* LoginButton.swift in Sources */,
 				89864BC527AC9D8C003CAAFE /* LoginTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -16,14 +16,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CV4-2u-isf">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CV4-2u-isf">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rUs-4B-UIu">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rUs-4B-UIu">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="801"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="SMZ-F0-PY7">
-                                                <rect key="frame" x="16" y="68" width="382" height="88.5"/>
+                                                <rect key="frame" x="16" y="68" width="382" height="103"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Profile Creation" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r9h-TP-0Ke">
                                                         <rect key="frame" x="0.0" y="0.0" width="382" height="56.5"/>
@@ -32,8 +32,8 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Use the Form below to submit your portfolio. An email and password are required" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d4H-qU-Eja">
-                                                        <rect key="frame" x="0.0" y="64.5" width="382" height="24"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <rect key="frame" x="0.0" y="64.5" width="382" height="38.5"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                                         <color key="textColor" red="0.47450977560000002" green="0.47450977560000002" blue="0.47450977560000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -46,7 +46,7 @@
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="uX9-md-fau">
-                                                <rect key="frame" x="20" y="180.5" width="378" height="264"/>
+                                                <rect key="frame" x="20" y="195" width="378" height="264"/>
                                                 <subviews>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5dD-UV-LAT" customClass="LoginTextField" customModule="Login_Flipgrid" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="378" height="60"/>
@@ -82,10 +82,18 @@
                                                     </textField>
                                                 </subviews>
                                             </stackView>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DUK-rT-Flu">
-                                                <rect key="frame" x="16" y="823" width="382" height="31"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DUK-rT-Flu" customClass="LoginButton" customModule="Login_Flipgrid" customModuleProvider="target">
+                                                <rect key="frame" x="16" y="709" width="382" height="50"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="0dZ-73-3qT"/>
+                                                </constraints>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Submit"/>
+                                                <connections>
+                                                    <action selector="userClickedSubmit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ciu-hw-w39"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <viewLayoutGuide key="safeArea" id="QrH-aw-17J"/>
@@ -98,6 +106,7 @@
                                             <constraint firstItem="uX9-md-fau" firstAttribute="top" secondItem="SMZ-F0-PY7" secondAttribute="bottom" constant="24" id="cLN-sl-DMd"/>
                                             <constraint firstAttribute="trailing" secondItem="DUK-rT-Flu" secondAttribute="trailing" constant="16" id="iqV-Wp-Ani"/>
                                             <constraint firstItem="QrH-aw-17J" firstAttribute="trailing" secondItem="uX9-md-fau" secondAttribute="trailing" constant="16" id="rR9-NA-SOL"/>
+                                            <constraint firstItem="DUK-rT-Flu" firstAttribute="top" secondItem="uX9-md-fau" secondAttribute="bottom" constant="250" id="sr9-7w-zWp"/>
                                             <constraint firstAttribute="bottom" secondItem="DUK-rT-Flu" secondAttribute="bottom" constant="42" id="tXe-lS-rfA"/>
                                             <constraint firstItem="SMZ-F0-PY7" firstAttribute="top" secondItem="QrH-aw-17J" secondAttribute="top" constant="24" id="z7j-Wb-gzq"/>
                                         </constraints>
@@ -125,6 +134,15 @@
                             <constraint firstItem="CV4-2u-isf" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="y1O-aY-fPn"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailAddressTextField" destination="50S-bs-hVt" id="DcX-MP-KkG"/>
+                        <outlet property="firstNameTextField" destination="5dD-UV-LAT" id="RdE-0F-ueX"/>
+                        <outlet property="passwordTextField" destination="WX8-UK-0As" id="Qpm-60-C7F"/>
+                        <outlet property="profilePageHeaderLabel" destination="r9h-TP-0Ke" id="RKT-mS-4F9"/>
+                        <outlet property="profilePageHelperLabel" destination="d4H-qU-Eja" id="gUi-ZE-1gM"/>
+                        <outlet property="submitButton" destination="DUK-rT-Flu" id="ARp-w5-jPj"/>
+                        <outlet property="websiteTextField" destination="9r6-aX-p6A" id="OFZ-d3-CCd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -133,16 +151,16 @@
     </scenes>
     <designables>
         <designable name="50S-bs-hVt">
-            <size key="intrinsicContentSize" width="64.5" height="34"/>
+            <size key="intrinsicContentSize" width="119.5" height="34"/>
         </designable>
         <designable name="5dD-UV-LAT">
-            <size key="intrinsicContentSize" width="64.5" height="34"/>
+            <size key="intrinsicContentSize" width="98" height="34"/>
         </designable>
         <designable name="9r6-aX-p6A">
-            <size key="intrinsicContentSize" width="64.5" height="34"/>
+            <size key="intrinsicContentSize" width="80.5" height="34"/>
         </designable>
         <designable name="WX8-UK-0As">
-            <size key="intrinsicContentSize" width="64.5" height="34"/>
+            <size key="intrinsicContentSize" width="90.5" height="34"/>
         </designable>
     </designables>
     <resources>

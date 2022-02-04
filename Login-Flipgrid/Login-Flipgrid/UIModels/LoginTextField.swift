@@ -9,10 +9,10 @@ import Foundation
 import UIKit
 
 @IBDesignable
-class LoginTextField: UITextField {
+class LoginTextField: UITextField, UITextFieldDelegate {
     
     /// set placeholder Text
-    var placeHolderText: String = "hello"
+    var placeHolderText: String = "Submit"
     
     /// set border width
     var borderWidth: CGFloat = 0.4
@@ -46,7 +46,11 @@ class LoginTextField: UITextField {
                                 UIColor.init(displayP3Red: 105/255, green: 105/255, blue: 105/255, alpha: 1),
                                 NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 16) ])
         self.font = UIFont.boldSystemFont(ofSize: 16)
+        self.delegate = self
     }
-
     
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
 }
