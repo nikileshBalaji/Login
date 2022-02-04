@@ -16,6 +16,8 @@
 		89864BA827AC7B93003CAAFE /* Login_FlipgridTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89864BA727AC7B93003CAAFE /* Login_FlipgridTests.swift */; };
 		89864BB227AC7B93003CAAFE /* Login_FlipgridUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89864BB127AC7B93003CAAFE /* Login_FlipgridUITests.swift */; };
 		89864BB427AC7B93003CAAFE /* Login_FlipgridUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89864BB327AC7B93003CAAFE /* Login_FlipgridUITestsLaunchTests.swift */; };
+		89864BC427AC9D8C003CAAFE /* LoginTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89864BC327AC9D8C003CAAFE /* LoginTextField.swift */; };
+		89864BC527AC9D8C003CAAFE /* LoginTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89864BC327AC9D8C003CAAFE /* LoginTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,7 @@
 		89864BAD27AC7B93003CAAFE /* Login-FlipgridUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Login-FlipgridUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		89864BB127AC7B93003CAAFE /* Login_FlipgridUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login_FlipgridUITests.swift; sourceTree = "<group>"; };
 		89864BB327AC7B93003CAAFE /* Login_FlipgridUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login_FlipgridUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		89864BC327AC9D8C003CAAFE /* LoginTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,12 +102,12 @@
 		89864B8F27AC7B92003CAAFE /* Login-Flipgrid */ = {
 			isa = PBXGroup;
 			children = (
-				89864B9027AC7B92003CAAFE /* AppDelegate.swift */,
 				89864B9227AC7B92003CAAFE /* SceneDelegate.swift */,
-				89864B9427AC7B92003CAAFE /* ViewController.swift */,
-				89864B9627AC7B92003CAAFE /* Main.storyboard */,
+				89864B9027AC7B92003CAAFE /* AppDelegate.swift */,
+				89864BC227AC9D20003CAAFE /* UIModels */,
+				89864BC127AC9CFB003CAAFE /* Storyboard */,
+				89864BC027AC9CE5003CAAFE /* ViewController */,
 				89864B9927AC7B93003CAAFE /* Assets.xcassets */,
-				89864B9B27AC7B93003CAAFE /* LaunchScreen.storyboard */,
 				89864B9E27AC7B93003CAAFE /* Info.plist */,
 			);
 			path = "Login-Flipgrid";
@@ -125,6 +128,31 @@
 				89864BB327AC7B93003CAAFE /* Login_FlipgridUITestsLaunchTests.swift */,
 			);
 			path = "Login-FlipgridUITests";
+			sourceTree = "<group>";
+		};
+		89864BC027AC9CE5003CAAFE /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				89864B9427AC7B92003CAAFE /* ViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		89864BC127AC9CFB003CAAFE /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				89864B9B27AC7B93003CAAFE /* LaunchScreen.storyboard */,
+				89864B9627AC7B92003CAAFE /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		89864BC227AC9D20003CAAFE /* UIModels */ = {
+			isa = PBXGroup;
+			children = (
+				89864BC327AC9D8C003CAAFE /* LoginTextField.swift */,
+			);
+			path = UIModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +287,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				89864B9527AC7B92003CAAFE /* ViewController.swift in Sources */,
+				89864BC427AC9D8C003CAAFE /* LoginTextField.swift in Sources */,
 				89864B9127AC7B92003CAAFE /* AppDelegate.swift in Sources */,
 				89864B9327AC7B92003CAAFE /* SceneDelegate.swift in Sources */,
 			);
@@ -269,6 +298,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				89864BA827AC7B93003CAAFE /* Login_FlipgridTests.swift in Sources */,
+				89864BC527AC9D8C003CAAFE /* LoginTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
