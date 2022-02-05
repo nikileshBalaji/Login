@@ -8,6 +8,8 @@
 import Foundation
 import UIKit
 
+@IBDesignable
+/// Custom Login Button for Login
 class LoginButton: UIButton {
     
     let startColor = UIColor(red: 232/255, green: 92/255, blue: 44/255, alpha: 1).cgColor
@@ -30,10 +32,10 @@ class LoginButton: UIButton {
     
     override func layoutSubviews() {
         super.layoutSubviews()
-        setup()
+        setupButton()
     }
     
-    func setup() {
+    private func setupButton() {
         let gradient = CAGradientLayer()
         gradient.frame = self.bounds
         gradient.colors = gradientColors ?? [startColor, middleColor, endColor]

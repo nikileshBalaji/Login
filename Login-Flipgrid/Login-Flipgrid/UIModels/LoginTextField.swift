@@ -8,7 +8,9 @@
 import Foundation
 import UIKit
 
+
 @IBDesignable
+/// Custom Login Textfield for Login
 class LoginTextField: UITextField, UITextFieldDelegate {
     
     /// set placeholder Text
@@ -23,6 +25,9 @@ class LoginTextField: UITextField, UITextFieldDelegate {
     /// set corner radius
     var cornerRadius: CGFloat?
     
+    /// set to true if password
+    var secureText: Bool = false
+    
     override init(frame: CGRect){
             super.init(frame: frame)
     }
@@ -33,10 +38,10 @@ class LoginTextField: UITextField, UITextFieldDelegate {
     
     override func layoutSubviews() {
         super.layoutSubviews()
-        setup()
+        setupTextField()
     }
     
-    func setup() {
+    private func setupTextField() {
         self.clipsToBounds = true
         self.layer.cornerRadius = self.frame.size.height / 5
         self.layer.borderColor = borderColor
@@ -46,6 +51,7 @@ class LoginTextField: UITextField, UITextFieldDelegate {
                                 UIColor.init(displayP3Red: 105/255, green: 105/255, blue: 105/255, alpha: 1),
                                 NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 16) ])
         self.font = UIFont.boldSystemFont(ofSize: 16)
+        self.isSecureTextEntry = secureText
         self.delegate = self
     }
     
