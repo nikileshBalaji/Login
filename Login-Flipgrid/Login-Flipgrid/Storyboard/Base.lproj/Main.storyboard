@@ -171,7 +171,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="752"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="7Ly-3w-3jJ">
-                                                <rect key="frame" x="16" y="18" width="382" height="32"/>
+                                                <rect key="frame" x="16" y="18" width="382" height="56"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oqk-qU-MCD" customClass="LoginUILabel" customModule="Login_Flipgrid" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="382" height="0.0"/>
@@ -185,20 +185,25 @@
                                                         <color key="textColor" red="0.47450977560000002" green="0.47450977560000002" blue="0.47450977560000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="user website" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vjp-H1-qFK" customClass="LoginUILabel" customModule="Login_Flipgrid" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="16" width="382" height="0.0"/>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="hello.com" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="f1U-C8-0Ns">
+                                                        <rect key="frame" x="0.0" y="16" width="382" height="24"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="24" id="Num-UP-nJB"/>
+                                                        </constraints>
+                                                        <color key="textColor" systemColor="labelColor"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
-                                                        <color key="textColor" red="0.47450977560000002" green="0.47450977560000002" blue="0.47450977560000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                        <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                                                    </textView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User Name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1JA-kZ-qiq" customClass="LoginUILabel" customModule="Login_Flipgrid" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="24" width="382" height="0.0"/>
+                                                        <rect key="frame" x="0.0" y="48" width="382" height="0.0"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                                         <color key="textColor" red="0.47450977560000002" green="0.47450977560000002" blue="0.47450977560000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email ID" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XSb-jM-fvh" customClass="LoginUILabel" customModule="Login_Flipgrid" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="32" width="382" height="0.0"/>
+                                                        <rect key="frame" x="0.0" y="56" width="382" height="0.0"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                                         <color key="textColor" red="0.47450977560000002" green="0.47450977560000002" blue="0.47450977560000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <nil key="highlightedColor"/>
@@ -209,12 +214,12 @@
                                                     <constraint firstAttribute="trailing" secondItem="Oqk-qU-MCD" secondAttribute="trailing" id="72z-U7-QX5"/>
                                                     <constraint firstItem="JjN-PM-5TW" firstAttribute="leading" secondItem="7Ly-3w-3jJ" secondAttribute="leading" id="8Dr-Ek-kas"/>
                                                     <constraint firstAttribute="trailing" secondItem="1JA-kZ-qiq" secondAttribute="trailing" id="Bxg-vu-SDQ"/>
-                                                    <constraint firstItem="Vjp-H1-qFK" firstAttribute="leading" secondItem="7Ly-3w-3jJ" secondAttribute="leading" id="FU1-xI-lyc"/>
                                                     <constraint firstItem="Oqk-qU-MCD" firstAttribute="leading" secondItem="7Ly-3w-3jJ" secondAttribute="leading" id="Ms5-S8-RvF"/>
                                                     <constraint firstAttribute="trailing" secondItem="XSb-jM-fvh" secondAttribute="trailing" id="Oq7-Me-LQ9"/>
                                                     <constraint firstItem="XSb-jM-fvh" firstAttribute="leading" secondItem="7Ly-3w-3jJ" secondAttribute="leading" id="fM9-db-6gv"/>
-                                                    <constraint firstAttribute="trailing" secondItem="Vjp-H1-qFK" secondAttribute="trailing" id="tEu-y6-JiC"/>
+                                                    <constraint firstItem="f1U-C8-0Ns" firstAttribute="leading" secondItem="JjN-PM-5TW" secondAttribute="leading" id="gM6-Hz-e0e"/>
                                                     <constraint firstItem="1JA-kZ-qiq" firstAttribute="leading" secondItem="7Ly-3w-3jJ" secondAttribute="leading" id="tYj-zS-I2U"/>
+                                                    <constraint firstItem="f1U-C8-0Ns" firstAttribute="trailing" secondItem="JjN-PM-5TW" secondAttribute="trailing" id="yUb-Em-coA"/>
                                                 </constraints>
                                             </stackView>
                                         </subviews>
@@ -280,7 +285,7 @@
                         <outlet property="signinButton" destination="dGr-m1-egO" id="Sa7-Nv-vNh"/>
                         <outlet property="userEmailLabel" destination="XSb-jM-fvh" id="tan-wX-CTT"/>
                         <outlet property="userNameLabel" destination="1JA-kZ-qiq" id="XBf-k2-g8e"/>
-                        <outlet property="userWebsiteLabel" destination="Vjp-H1-qFK" id="VgQ-Zg-hZi"/>
+                        <outlet property="userWebsiteTextView" destination="f1U-C8-0Ns" id="28a-qF-Zo9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="py4-gW-aCz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -304,7 +309,6 @@
         </designable>
         <designable name="JjN-PM-5TW"/>
         <designable name="Oqk-qU-MCD"/>
-        <designable name="Vjp-H1-qFK"/>
         <designable name="WX8-UK-0As">
             <size key="intrinsicContentSize" width="82" height="34"/>
         </designable>
@@ -316,6 +320,9 @@
         <designable name="r9h-TP-0Ke"/>
     </designables>
     <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

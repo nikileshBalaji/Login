@@ -49,32 +49,25 @@ class ViewController: UIViewController {
     @IBAction func userClickedSubmit(_ sender: LoginButton) {
         if let viewController = self.storyboard?
             .instantiateViewController(withIdentifier: "ConfirmatioView") as? ConfirmationViewController {
-            if let person = verifyAndcreateUser() {
+            if let person = User.init(name: firstNameTextField.text,
+                                      email: emailAddressTextField.text,
+                                      password: passwordTextField.text,
+                                      website: websiteTextField.text) {
                 viewController.user = person
                 viewController.modalPresentationStyle = .fullScreen
                 self.present(viewController, animated: true, completion: nil)
             } else {
-                let action = UIAlertAction(title: Constants.ApplicationContent.alertAction, style: .default, handler: nil)
-                let alert = UIAlertController(title: Constants.ApplicationContent.profileCreationAlertHeader,
-                                                        message: Constants.ApplicationContent.profileCreationAlertMessage, preferredStyle: .alert)
-                alert.addAction(action)
-                self.present(alert, animated: true, completion: nil)
+                showAlertOfMissingInformation()
             }
-           
         }
     }
     
-    func verifyAndcreateUser() -> User? {
-        guard let name = firstNameTextField.text, !name.isEmpty,
-              let email = emailAddressTextField.text, !email.isEmpty,
-              let password = passwordTextField.text, !password.isEmpty,
-              let website = websiteTextField.text, !website.isEmpty else {
-                  return nil
-              }
-            return User(name: firstNameTextField.text!,
-                        email: emailAddressTextField.text!,
-                        password: passwordTextField.text!,
-                        website: websiteTextField.text!)
+    func showAlertOfMissingInformation() {
+        let action = UIAlertAction(title: Constants.ApplicationContent.alertAction, style: .default, handler: nil)
+        let alert = UIAlertController(title: Constants.ApplicationContent.profileCreationAlertHeader,
+                                                message: Constants.ApplicationContent.profileCreationAlertMessage, preferredStyle: .alert)
+        alert.addAction(action)
+        self.present(alert, animated: true, completion: nil)
     }
     
 }
