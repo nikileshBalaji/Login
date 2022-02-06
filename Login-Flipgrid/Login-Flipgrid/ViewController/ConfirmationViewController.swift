@@ -17,7 +17,12 @@ class ConfirmationViewController: UIViewController {
     @IBOutlet weak var userEmailLabel: LoginUILabel!
     @IBOutlet weak var signinButton: LoginButton!
     
+    
+    @IBOutlet weak var userInfoDisplayStackView: UIStackView!
     var user: User?
+    
+    @IBOutlet weak var signInButtonTopConstraint: NSLayoutConstraint!
+    var originalHeight = 0.0
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -42,7 +47,7 @@ class ConfirmationViewController: UIViewController {
             userSiteURL = user?.website.0?.replacingOccurrences(of: "https://", with: "") ?? ""
         }
         let attributedString = NSMutableAttributedString(string: userSiteURL ?? "" )
-        let url = URL(string: user?.website.0 ?? "")!
+        let url = URL(string: user?.website.0 ?? Constants.ApplicationContent.defaultURL)!
         attributedString.setAttributes([.link: url,
                                         NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 16)], range: NSMakeRange(0, userSiteURL?.count ?? 0))
         userWebsiteTextView.attributedText = attributedString
@@ -58,9 +63,39 @@ class ConfirmationViewController: UIViewController {
     func setupButton() {
         signinButton.cornerRadius = signinButton.frame.size.height / 5
         signinButton.setTitle(Constants.ApplicationContent.signIn, for: .normal)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.1, execute: {
+            self.updateButtonConstraints()
+        })
     }
     
-    @IBAction func userClickedSiginButton(_ sender: Any) {
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        super.viewWillTransition(to: size, with: coordinator)
+        DispatchQueue.main.async {
+            self.updateButtonConstraints()
+        }
+    }
+    
+    func updateButtonConstraints() {
+        let userInputcontentView = userInfoDisplayStackView.frame.height
+        let mainview = self.view.safeAreaLayoutGuide.layoutFrame.height
+        let finalHeight = mainview - userInputcontentView - signinButton.frame.height - 50
+        if ((UIDevice.current.orientation.isPortrait && UIDevice.current.userInterfaceIdiom == .phone) ||
+        (UIDevice.current.userInterfaceIdiom == .pad)) {
+            if (userInputcontentView < mainview) {
+                originalHeight = signInButtonTopConstraint.constant
+                signInButtonTopConstraint.constant = finalHeight
+            }
+        } else {
+            if (userInputcontentView < mainview) {
+                originalHeight = signInButtonTopConstraint.constant
+                signInButtonTopConstraint.constant = finalHeight
+            } else {
+                signInButtonTopConstraint.constant = originalHeight
+            }
+        }
+    }
+    
+    @IBAction func userClickedSiginButton(_ sender: LoginButton) {
         self.dismiss(animated: true, completion: nil)
     }
     

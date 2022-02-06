@@ -24,8 +24,11 @@ struct Constants {
         static let LoginConfirmationHeader =            "Hello, %s!"
         static let LoginConfirmationHelperText =        "Your super-awesome portfolio has been successfully submitted! The details below will be within your community!"
         static let signIn =                             "Sign In"
+        static let defaultURL =                         "https://linkedin.com"
         
         static let alertAction =                        "okay"
+        
+        
     }
     
     struct ApplicationColor {

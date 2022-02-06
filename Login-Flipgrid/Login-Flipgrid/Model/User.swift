@@ -36,7 +36,7 @@ class User {
         guard let name = userName, !name.isEmpty,
               let email = userEmail, !email.isEmpty,
               let password = userPassword, !password.isEmpty,
-              let website = userWebsite, !website.isEmpty else {
+              let website = userWebsite, !website.isEmpty, !website.contains(" ") else {
                   return false
               }
         return true
