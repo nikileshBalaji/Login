@@ -64,8 +64,9 @@ class ViewController: UIViewController {
     }
     
     func updateButtonConstraints() {
-        if ((UIDevice.current.orientation.isPortrait && UIDevice.current.userInterfaceIdiom == .phone) ||
-        (UIDevice.current.userInterfaceIdiom == .pad)) {
+        if let windowScene = self.view.window?.windowScene,
+           ((windowScene.interfaceOrientation.isPortrait && UIDevice.current.userInterfaceIdiom == .phone)
+            || (UIDevice.current.userInterfaceIdiom == .pad)) {
             let userInputcontentView = userInputView.frame.height
             let mainview = self.view.safeAreaLayoutGuide.layoutFrame.height
             let finalHeight = mainview - userInputcontentView - submitButton.frame.height - 50

@@ -79,7 +79,8 @@ class ConfirmationViewController: UIViewController {
         let userInputcontentView = userInfoDisplayStackView.frame.height
         let mainview = self.view.safeAreaLayoutGuide.layoutFrame.height
         let finalHeight = mainview - userInputcontentView - signinButton.frame.height - 50
-        if ((UIDevice.current.orientation.isPortrait && UIDevice.current.userInterfaceIdiom == .phone) ||
+        if let windowScene = self.view.window?.windowScene,
+           ((windowScene.interfaceOrientation.isPortrait && UIDevice.current.userInterfaceIdiom == .phone) ||
         (UIDevice.current.userInterfaceIdiom == .pad)) {
             if (userInputcontentView < mainview) {
                 originalHeight = signInButtonTopConstraint.constant
