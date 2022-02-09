@@ -1,0 +1,45 @@
+
+/* Class = "UITextField"; placeholder = "First Name"; ObjectID = "1Af-Hx-JX8"; */
+"1Af-Hx-JX8.placeholder" = "First Name";
+
+/* Class = "UITextField"; placeholder = "First Name"; ObjectID = "1eP-ZK-Zpb"; */
+"1eP-ZK-Zpb.placeholder" = "First Name";
+
+/* Class = "UITextField"; placeholder = "First Name"; ObjectID = "5jQ-Pv-LIa"; */
+"5jQ-Pv-LIa.placeholder" = "First Name";
+
+/* Class = "UILabel"; text = "Hello"; ObjectID = "BAH-DA-RPO"; */
+"BAH-DA-RPO.text" = "Hello";
+
+/* Class = "UILabel"; text = "User Name"; ObjectID = "C7a-sR-EX6"; */
+"C7a-sR-EX6.text" = "User Name";
+
+/* Class = "UIButton"; configuration.title = "Submit"; ObjectID = "Fxt-t3-YsY"; */
+"Fxt-t3-YsY.configuration.title" = "Submit";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Fxt-t3-YsY"; */
+"Fxt-t3-YsY.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Email ID"; ObjectID = "HGP-Ku-h5N"; */
+"HGP-Ku-h5N.text" = "Email ID";
+
+/* Class = "UIButton"; configuration.title = "Submit"; ObjectID = "IzS-kq-thZ"; */
+"IzS-kq-thZ.configuration.title" = "Submit";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "IzS-kq-thZ"; */
+"IzS-kq-thZ.normalTitle" = "Button";
+
+/* Class = "UITextField"; placeholder = "First Name"; ObjectID = "O3X-YQ-2Nv"; */
+"O3X-YQ-2Nv.placeholder" = "First Name";
+
+/* Class = "UILabel"; text = "helper Text"; ObjectID = "od0-kL-pqd"; */
+"od0-kL-pqd.text" = "helper Text";
+
+/* Class = "UILabel"; text = "Profile Creation"; ObjectID = "pBo-Sa-Xyn"; */
+"pBo-Sa-Xyn.text" = "Profile Creation";
+
+/* Class = "UILabel"; text = "Helper Text"; ObjectID = "qnY-KO-U6T"; */
+"qnY-KO-U6T.text" = "Helper Text";
+
+/* Class = "UITextView"; text = "hello.com"; ObjectID = "rFf-Ut-p8o"; */
+"rFf-Ut-p8o.text" = "hello.com";

@@ -1,0 +1,21 @@
+/* 
+  Localizable.strings
+  Login-Flipgrid
+
+  Created by nikilesh balaji on 2/9/22.
+  
+*/
+"profileCreationHeaderText" = "Profile Creation";
+"profileCreationHelperText" = "Use the Form below to submit your portfolio. An email and password are required";
+"profileCreationFirstName"  = "First Name";
+"profileCreationEmailAddress" = "Email Address";
+"profileCreationPassword" = "Password";
+"profileCreationWebsite"  = "Website";
+"submitButton" = "Submit";
+"profileCreationAlertHeader" = "Missing Information";
+"profileCreationAlertMessage" = "Enter information in all fields";
+"LoginConfirmationHeader" = "Hello, %s!";
+"LoginConfirmationHelperText" = "Your super-awesome portfolio has been successfully submitted! The details below will be within your community!";
+"signIn" = "Sign In";
+"defaultURL" = "https://linkedin.com";
+"alertAction" = "Okay";

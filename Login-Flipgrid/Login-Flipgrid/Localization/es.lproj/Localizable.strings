@@ -1,0 +1,21 @@
+/* 
+  Localizable.strings
+  Login-Flipgrid
+
+  Created by nikilesh balaji on 2/9/22.
+  
+*/
+"profileCreationHeaderText" = "Creación de perfil";
+"profileCreationHelperText" = "Utilice el siguiente formulario para enviar su cartera. Se requiere un correo electrónico y una contraseña.";
+"profileCreationFirstName"  = "Primer nombre";
+"profileCreationEmailAddres" = "Dirección de correo electrónico";
+"profileCreationPassword" = "Contraseña";
+"profileCreationWebsite"  = "Sitio web";
+"submitButton" = "Entregar";
+"profileCreationAlertHeader" = "Información faltante";
+"profileCreationAlertMessage" = "Ingrese la información en todos los campos";
+"LoginConfirmationHeader" = "¡Hola, %s!";
+"LoginConfirmationHelperText" = "¡Tu increíble portafolio ha sido enviado con éxito! ¡Los detalles a continuación estarán dentro de su comunidad!";
+"signIn" = "Iniciar sesión";
+"defaultURL" = "https://linkedin.com";
+"alertAction" = "Okey";

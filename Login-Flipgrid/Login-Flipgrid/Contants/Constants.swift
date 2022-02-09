@@ -11,22 +11,22 @@ import UIKit
 struct Constants {
     
     struct ApplicationContent {
-        static let profileCreationHeaderText =          "Profile Creation"
-        static let profileCreationHelperText =          "Use the Form below to submit your portfolio. An email and password are required"
-        static let profileCreationFirstName =           "First Name"
-        static let profileCreationEmailAddress =        "Email Address"
-        static let profileCreationPassword =            "Password"
-        static let profileCreationWebsite  =            "Website"
-        static let submitButton =                       "Submit"
-        static let profileCreationAlertHeader =         "Missing Information"
-        static let profileCreationAlertMessage =        "Enter information in all fields"
+        static let profileCreationHeaderText =          "profileCreationHeaderText"
+        static let profileCreationHelperText =          "profileCreationHelperText"
+        static let profileCreationFirstName =           "profileCreationFirstName"
+        static let profileCreationEmailAddress =        "profileCreationEmailAddress"
+        static let profileCreationPassword =            "profileCreationPassword"
+        static let profileCreationWebsite  =            "profileCreationWebsite"
+        static let submitButton =                       "submitButton"
+        static let profileCreationAlertHeader =         "profileCreationAlertHeader"
+        static let profileCreationAlertMessage =        "profileCreationAlertMessage"
         
-        static let LoginConfirmationHeader =            "Hello, %s!"
-        static let LoginConfirmationHelperText =        "Your super-awesome portfolio has been successfully submitted! The details below will be within your community!"
-        static let signIn =                             "Sign In"
-        static let defaultURL =                         "https://linkedin.com"
+        static let LoginConfirmationHeader =            "LoginConfirmationHeader"
+        static let LoginConfirmationHelperText =        "LoginConfirmationHelperText"
+        static let signIn =                             "signIn"
+        static let defaultURL =                         "defaultURL"
         
-        static let alertAction =                        "okay"
+        static let alertAction =                        "alertAction"
         
         
     }

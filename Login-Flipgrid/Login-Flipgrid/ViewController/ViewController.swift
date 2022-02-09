@@ -36,23 +36,30 @@ class ViewController: UIViewController {
         let headerLabelFont = UIFont.boldSystemFont(ofSize: 47.0)
         profilePageHeaderLabel.update(labelTextcolor: Constants.ApplicationColor.loginHeaderTextColor,
                                       font: headerLabelFont,
-                                      withText: Constants.ApplicationContent.profileCreationHeaderText)
+                                      withText: LocalizationString.localization(stringID:
+                                                            Constants.ApplicationContent.profileCreationHeaderText))
         profilePageHelperLabel.update(labelTextcolor: Constants.ApplicationColor.loginHelperTextColor,
                                       font: nil,
-                                      withText: Constants.ApplicationContent.profileCreationHelperText)
+                                      withText: LocalizationString.localization(stringID:
+                                                            Constants.ApplicationContent.profileCreationHelperText))
     }
     
     func setUpTextField() {
-        firstNameTextField.placeHolderText = Constants.ApplicationContent.profileCreationFirstName
-        emailAddressTextField.placeHolderText = Constants.ApplicationContent.profileCreationEmailAddress
+        firstNameTextField.placeHolderText = LocalizationString.localization(stringID:
+                                                Constants.ApplicationContent.profileCreationFirstName)
+        emailAddressTextField.placeHolderText = LocalizationString.localization(stringID:
+                                                Constants.ApplicationContent.profileCreationEmailAddress)
         passwordTextField.secureText = true
-        passwordTextField.placeHolderText = Constants.ApplicationContent.profileCreationPassword
-        websiteTextField.placeHolderText = Constants.ApplicationContent.profileCreationWebsite
+        passwordTextField.placeHolderText = LocalizationString.localization(stringID:
+                                                Constants.ApplicationContent.profileCreationPassword)
+        websiteTextField.placeHolderText = LocalizationString.localization(stringID:
+                                                Constants.ApplicationContent.profileCreationWebsite)
     }
     
     func setupButton() {
         submitButton.cornerRadius = submitButton.frame.size.height / 5
-        submitButton.setTitle(Constants.ApplicationContent.submitButton, for: .normal)
+        submitButton.setTitle(LocalizationString.localization(stringID:
+                                Constants.ApplicationContent.submitButton), for: .normal)
         updateButtonConstraints()
     }
     
@@ -64,6 +71,7 @@ class ViewController: UIViewController {
     }
     
     func updateButtonConstraints() {
+        //  UIDevice.current.orientation.isPortrait does not give expected result.
         if let windowScene = self.view.window?.windowScene,
            ((windowScene.interfaceOrientation.isPortrait && UIDevice.current.userInterfaceIdiom == .phone)
             || (UIDevice.current.userInterfaceIdiom == .pad)) {
@@ -96,9 +104,12 @@ class ViewController: UIViewController {
     }
     
     func showAlertOfMissingInformation() {
-        let action = UIAlertAction(title: Constants.ApplicationContent.alertAction, style: .default, handler: nil)
-        let alert = UIAlertController(title: Constants.ApplicationContent.profileCreationAlertHeader,
-                                                message: Constants.ApplicationContent.profileCreationAlertMessage, preferredStyle: .alert)
+        let action = UIAlertAction(title: LocalizationString.localization(stringID:
+                                            Constants.ApplicationContent.alertAction), style: .default, handler: nil)
+        let alert = UIAlertController(title: LocalizationString.localization(stringID:
+                                            Constants.ApplicationContent.profileCreationAlertHeader),
+                                    message: LocalizationString.localization(stringID:
+                                            Constants.ApplicationContent.profileCreationAlertMessage), preferredStyle: .alert)
         alert.addAction(action)
         self.present(alert, animated: true, completion: nil)
     }
