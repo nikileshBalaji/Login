@@ -58,7 +58,6 @@ class ConfirmationViewController: UIViewController {
         self.userWebsiteTextView.linkTextAttributes = [
             .foregroundColor: UIColor.blue,
             .underlineStyle: NSUnderlineStyle.single.rawValue
-            
         ]
         self.userWebsiteTextView.textAlignment = .center
     }

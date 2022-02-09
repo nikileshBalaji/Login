@@ -14,8 +14,8 @@
 "submitButton" = "Entregar";
 "profileCreationAlertHeader" = "Información faltante";
 "profileCreationAlertMessage" = "Ingrese la información en todos los campos";
-"LoginConfirmationHeader" = "¡Hola, %s!";
-"LoginConfirmationHelperText" = "¡Tu increíble portafolio ha sido enviado con éxito! ¡Los detalles a continuación estarán dentro de su comunidad!";
+"LoginConfirmationHeader" = "Hola, %s!";
+"LoginConfirmationHelperText" = "Tu increíble portafolio ha sido enviado con éxito! ¡Los detalles a continuación estarán dentro de su comunidad!";
 "signIn" = "Iniciar sesión";
 "defaultURL" = "https://linkedin.com";
 "alertAction" = "Okey";
