@@ -23,13 +23,27 @@
 		89864B9D27AC7B93003CAAFE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89864B9B27AC7B93003CAAFE /* LaunchScreen.storyboard */; };
 		89864BA827AC7B93003CAAFE /* Login_FlipgridTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89864BA727AC7B93003CAAFE /* Login_FlipgridTests.swift */; };
 		89864BB227AC7B93003CAAFE /* Login_FlipgridUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89864BB127AC7B93003CAAFE /* Login_FlipgridUITests.swift */; };
-		89864BB427AC7B93003CAAFE /* Login_FlipgridUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89864BB327AC7B93003CAAFE /* Login_FlipgridUITestsLaunchTests.swift */; };
 		89864BC427AC9D8C003CAAFE /* LoginTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89864BC327AC9D8C003CAAFE /* LoginTextField.swift */; };
 		89864BC527AC9D8C003CAAFE /* LoginTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89864BC327AC9D8C003CAAFE /* LoginTextField.swift */; };
 		89864BCA27AD895D003CAAFE /* LoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89864BC927AD895D003CAAFE /* LoginButton.swift */; };
 		89864BCB27AD895D003CAAFE /* LoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89864BC927AD895D003CAAFE /* LoginButton.swift */; };
 		8996A47227B41860008C0125 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8996A47427B41860008C0125 /* Localizable.strings */; };
 		8996A47927B41B4A008C0125 /* LocalizedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8996A47827B41B4A008C0125 /* LocalizedString.swift */; };
+		8996A47A27B4731F008C0125 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8996A47427B41860008C0125 /* Localizable.strings */; };
+		8996A47B27B47320008C0125 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8996A47427B41860008C0125 /* Localizable.strings */; };
+		8996A47C27B4733F008C0125 /* LocalizedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8996A47827B41B4A008C0125 /* LocalizedString.swift */; };
+		8996A47D27B4733F008C0125 /* LocalizedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8996A47827B41B4A008C0125 /* LocalizedString.swift */; };
+		8996A47E27B47406008C0125 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89864B9427AC7B92003CAAFE /* ViewController.swift */; };
+		8996A47F27B47407008C0125 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89864B9427AC7B92003CAAFE /* ViewController.swift */; };
+		8996A48027B4740A008C0125 /* ConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892520F527AE2AE100503EDF /* ConfirmationViewController.swift */; };
+		8996A48127B4740F008C0125 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892520F927AE3B9F00503EDF /* User.swift */; };
+		8996A48227B47414008C0125 /* LoginTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89864BC327AC9D8C003CAAFE /* LoginTextField.swift */; };
+		8996A48327B47416008C0125 /* LoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89864BC927AD895D003CAAFE /* LoginButton.swift */; };
+		8996A48427B47419008C0125 /* LoginUILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892520EE27ADF76C00503EDF /* LoginUILabel.swift */; };
+		8996A48527B4741D008C0125 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892520F227ADFF9000503EDF /* Constants.swift */; };
+		8996A48727B4A0C6008C0125 /* MainViewControllerUIElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8996A48627B4A0C6008C0125 /* MainViewControllerUIElements.swift */; };
+		8996A48927B4A1D4008C0125 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8996A48827B4A1D4008C0125 /* Utility.swift */; };
+		8996A48B27B4A322008C0125 /* ConfirmationViewControllerUIElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8996A48A27B4A322008C0125 /* ConfirmationViewControllerUIElements.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,7 +80,6 @@
 		89864BA727AC7B93003CAAFE /* Login_FlipgridTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login_FlipgridTests.swift; sourceTree = "<group>"; };
 		89864BAD27AC7B93003CAAFE /* Login-FlipgridUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Login-FlipgridUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		89864BB127AC7B93003CAAFE /* Login_FlipgridUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login_FlipgridUITests.swift; sourceTree = "<group>"; };
-		89864BB327AC7B93003CAAFE /* Login_FlipgridUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login_FlipgridUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		89864BC327AC9D8C003CAAFE /* LoginTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTextField.swift; sourceTree = "<group>"; };
 		89864BC927AD895D003CAAFE /* LoginButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginButton.swift; sourceTree = "<group>"; };
 		8996A46E27B417F9008C0125 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
@@ -74,6 +87,9 @@
 		8996A47327B41860008C0125 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		8996A47527B41863008C0125 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		8996A47827B41B4A008C0125 /* LocalizedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedString.swift; sourceTree = "<group>"; };
+		8996A48627B4A0C6008C0125 /* MainViewControllerUIElements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewControllerUIElements.swift; sourceTree = "<group>"; };
+		8996A48827B4A1D4008C0125 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		8996A48A27B4A322008C0125 /* ConfirmationViewControllerUIElements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationViewControllerUIElements.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,8 +182,9 @@
 		89864BB027AC7B93003CAAFE /* Login-FlipgridUITests */ = {
 			isa = PBXGroup;
 			children = (
-				89864BB127AC7B93003CAAFE /* Login_FlipgridUITests.swift */,
-				89864BB327AC7B93003CAAFE /* Login_FlipgridUITestsLaunchTests.swift */,
+				8996A48E27B4B30D008C0125 /* Utility */,
+				8996A48D27B4B2FA008C0125 /* TestCases */,
+				8996A48C27B4B2DD008C0125 /* ViewControllerUIElements */,
 			);
 			path = "Login-FlipgridUITests";
 			sourceTree = "<group>";
@@ -212,6 +229,31 @@
 			isa = PBXGroup;
 			children = (
 				8996A47827B41B4A008C0125 /* LocalizedString.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		8996A48C27B4B2DD008C0125 /* ViewControllerUIElements */ = {
+			isa = PBXGroup;
+			children = (
+				8996A48627B4A0C6008C0125 /* MainViewControllerUIElements.swift */,
+				8996A48A27B4A322008C0125 /* ConfirmationViewControllerUIElements.swift */,
+			);
+			path = ViewControllerUIElements;
+			sourceTree = "<group>";
+		};
+		8996A48D27B4B2FA008C0125 /* TestCases */ = {
+			isa = PBXGroup;
+			children = (
+				89864BB127AC7B93003CAAFE /* Login_FlipgridUITests.swift */,
+			);
+			path = TestCases;
+			sourceTree = "<group>";
+		};
+		8996A48E27B4B30D008C0125 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				8996A48827B4A1D4008C0125 /* Utility.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -332,6 +374,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8996A47B27B47320008C0125 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +382,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8996A47A27B4731F008C0125 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,9 +413,11 @@
 				892520F727AE2AE100503EDF /* ConfirmationViewController.swift in Sources */,
 				892520F427ADFF9000503EDF /* Constants.swift in Sources */,
 				892520F027ADF76D00503EDF /* LoginUILabel.swift in Sources */,
+				8996A47E27B47406008C0125 /* ViewController.swift in Sources */,
 				89864BA827AC7B93003CAAFE /* Login_FlipgridTests.swift in Sources */,
 				89864BCB27AD895D003CAAFE /* LoginButton.swift in Sources */,
 				89864BC527AC9D8C003CAAFE /* LoginTextField.swift in Sources */,
+				8996A47C27B4733F008C0125 /* LocalizedString.swift in Sources */,
 				892520FB27AE3B9F00503EDF /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -381,7 +427,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				89864BB227AC7B93003CAAFE /* Login_FlipgridUITests.swift in Sources */,
-				89864BB427AC7B93003CAAFE /* Login_FlipgridUITestsLaunchTests.swift in Sources */,
+				8996A48327B47416008C0125 /* LoginButton.swift in Sources */,
+				8996A48727B4A0C6008C0125 /* MainViewControllerUIElements.swift in Sources */,
+				8996A48927B4A1D4008C0125 /* Utility.swift in Sources */,
+				8996A48127B4740F008C0125 /* User.swift in Sources */,
+				8996A47F27B47407008C0125 /* ViewController.swift in Sources */,
+				8996A48B27B4A322008C0125 /* ConfirmationViewControllerUIElements.swift in Sources */,
+				8996A48527B4741D008C0125 /* Constants.swift in Sources */,
+				8996A48427B47419008C0125 /* LoginUILabel.swift in Sources */,
+				8996A47D27B4733F008C0125 /* LocalizedString.swift in Sources */,
+				8996A48027B4740A008C0125 /* ConfirmationViewController.swift in Sources */,
+				8996A48227B47414008C0125 /* LoginTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -564,7 +620,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -593,7 +649,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

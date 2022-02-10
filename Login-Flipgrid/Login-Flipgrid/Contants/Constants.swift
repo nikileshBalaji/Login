@@ -11,6 +11,7 @@ import UIKit
 struct Constants {
     
     struct ApplicationContent {
+        //MainViewController
         static let profileCreationHeaderText =          "profileCreationHeaderText"
         static let profileCreationHelperText =          "profileCreationHelperText"
         static let profileCreationFirstName =           "profileCreationFirstName"
@@ -21,6 +22,7 @@ struct Constants {
         static let profileCreationAlertHeader =         "profileCreationAlertHeader"
         static let profileCreationAlertMessage =        "profileCreationAlertMessage"
         
+        //ConfirmationViewController
         static let LoginConfirmationHeader =            "LoginConfirmationHeader"
         static let LoginConfirmationHelperText =        "LoginConfirmationHelperText"
         static let signIn =                             "signIn"

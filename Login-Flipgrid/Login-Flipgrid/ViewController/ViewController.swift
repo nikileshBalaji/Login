@@ -72,6 +72,7 @@ class ViewController: UIViewController {
     
     func updateButtonConstraints() {
         //  UIDevice.current.orientation.isPortrait does not give expected result.
+        // Also look https://www.jessesquires.com/blog/2021/11/13/xcode-13-device-orientation-bug/
         if let windowScene = self.view.window?.windowScene,
            ((windowScene.interfaceOrientation.isPortrait && UIDevice.current.userInterfaceIdiom == .phone)
             || (UIDevice.current.userInterfaceIdiom == .pad)) {
