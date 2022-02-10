@@ -37,6 +37,8 @@ class Login_FlipgridUITests: XCTestCase {
         mainViewControllerUIElements.emailTextField.typeText(dummyUser.emailAddress ?? "")
         XCUIApplication().keyboards.buttons["return"].tap()
         
+        XCUIDevice.shared.orientation = .landscapeRight
+        
         mainViewControllerUIElements.websiteTextField.tap()
         mainViewControllerUIElements.websiteTextField.typeText(dummyUser.website.0 ?? "")
         XCUIApplication().keyboards.buttons["return"].tap()
@@ -44,6 +46,8 @@ class Login_FlipgridUITests: XCTestCase {
         mainViewControllerUIElements.passwordTextField.tap()
         mainViewControllerUIElements.passwordTextField.typeText("6204161718#Wel")
         XCUIApplication().keyboards.buttons["return"].tap()
+        
+        XCUIDevice.shared.orientation = .portrait
         
         XCTAssertEqual(mainViewControllerUIElements.profileCreationHeaderTextLabel.label , Utility.localized(Constants.ApplicationContent.profileCreationHeaderText))
         XCTAssertEqual(mainViewControllerUIElements.profileCreationHelperTextLabel.label , Utility.localized(Constants.ApplicationContent.profileCreationHelperText))
@@ -63,7 +67,12 @@ class Login_FlipgridUITests: XCTestCase {
         XCTAssertEqual(confirmationViewControllerUIElements.userNameLabel.label, dummyUser.userName!, "ConfirmationVC NO Name")
         
         app.buttons[Utility.localized(Constants.ApplicationContent.signIn)].tap()
+       
+        XCUIDevice.shared.orientation = .landscapeRight
+        sleep(1)
         app.buttons[Utility.localized(Constants.ApplicationContent.submitButton)].tap()
+        XCUIDevice.shared.orientation = .portrait
+        
     }
     
     
@@ -80,12 +89,16 @@ class Login_FlipgridUITests: XCTestCase {
         mainViewControllerUIElements.firstNameTextField.typeText(dummyUser.userName ?? "")
         XCUIApplication().keyboards.buttons["return"].tap()
         
+        XCUIDevice.shared.orientation = .landscapeRight
+        
         app.buttons[Utility.localized(Constants.ApplicationContent.submitButton)].tap()
         app.buttons[Utility.localized(Constants.ApplicationContent.alertAction)].tap()
         
         mainViewControllerUIElements.emailTextField.tap()
         mainViewControllerUIElements.emailTextField.typeText(dummyUser.emailAddress ?? "")
         XCUIApplication().keyboards.buttons["return"].tap()
+        
+        XCUIDevice.shared.orientation = .portrait
         
         app.buttons[Utility.localized(Constants.ApplicationContent.submitButton)].tap()
         app.buttons[Utility.localized(Constants.ApplicationContent.alertAction)].tap()
@@ -94,12 +107,16 @@ class Login_FlipgridUITests: XCTestCase {
         mainViewControllerUIElements.websiteTextField.typeText(dummyUser.website.0 ?? "")
         XCUIApplication().keyboards.buttons["return"].tap()
         
+        XCUIDevice.shared.orientation = .landscapeRight
+        
         app.buttons[Utility.localized(Constants.ApplicationContent.submitButton)].tap()
         app.buttons[Utility.localized(Constants.ApplicationContent.alertAction)].tap()
         
         mainViewControllerUIElements.passwordTextField.tap()
         mainViewControllerUIElements.passwordTextField.typeText("6204161718#Wel")
         XCUIApplication().keyboards.buttons["return"].tap()
+        
+        XCUIDevice.shared.orientation = .portrait
         
         app.buttons[Utility.localized(Constants.ApplicationContent.submitButton)].tap()
         app.buttons[Utility.localized(Constants.ApplicationContent.signIn)].tap()

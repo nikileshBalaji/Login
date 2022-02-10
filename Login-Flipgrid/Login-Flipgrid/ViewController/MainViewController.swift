@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class MainViewController: UIViewController {
     @IBOutlet weak var profilePageHeaderLabel: LoginUILabel!
     @IBOutlet weak var profilePageHelperLabel: LoginUILabel!
     @IBOutlet weak var firstNameTextField: LoginTextField!

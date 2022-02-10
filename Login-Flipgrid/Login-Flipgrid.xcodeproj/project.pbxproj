@@ -17,7 +17,7 @@
 		892520FB27AE3B9F00503EDF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892520F927AE3B9F00503EDF /* User.swift */; };
 		89864B9127AC7B92003CAAFE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89864B9027AC7B92003CAAFE /* AppDelegate.swift */; };
 		89864B9327AC7B92003CAAFE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89864B9227AC7B92003CAAFE /* SceneDelegate.swift */; };
-		89864B9527AC7B92003CAAFE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89864B9427AC7B92003CAAFE /* ViewController.swift */; };
+		89864B9527AC7B92003CAAFE /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89864B9427AC7B92003CAAFE /* MainViewController.swift */; };
 		89864B9827AC7B92003CAAFE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89864B9627AC7B92003CAAFE /* Main.storyboard */; };
 		89864B9A27AC7B93003CAAFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89864B9927AC7B93003CAAFE /* Assets.xcassets */; };
 		89864B9D27AC7B93003CAAFE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89864B9B27AC7B93003CAAFE /* LaunchScreen.storyboard */; };
@@ -33,8 +33,8 @@
 		8996A47B27B47320008C0125 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8996A47427B41860008C0125 /* Localizable.strings */; };
 		8996A47C27B4733F008C0125 /* LocalizedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8996A47827B41B4A008C0125 /* LocalizedString.swift */; };
 		8996A47D27B4733F008C0125 /* LocalizedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8996A47827B41B4A008C0125 /* LocalizedString.swift */; };
-		8996A47E27B47406008C0125 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89864B9427AC7B92003CAAFE /* ViewController.swift */; };
-		8996A47F27B47407008C0125 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89864B9427AC7B92003CAAFE /* ViewController.swift */; };
+		8996A47E27B47406008C0125 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89864B9427AC7B92003CAAFE /* MainViewController.swift */; };
+		8996A47F27B47407008C0125 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89864B9427AC7B92003CAAFE /* MainViewController.swift */; };
 		8996A48027B4740A008C0125 /* ConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892520F527AE2AE100503EDF /* ConfirmationViewController.swift */; };
 		8996A48127B4740F008C0125 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892520F927AE3B9F00503EDF /* User.swift */; };
 		8996A48227B47414008C0125 /* LoginTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89864BC327AC9D8C003CAAFE /* LoginTextField.swift */; };
@@ -71,7 +71,7 @@
 		89864B8D27AC7B92003CAAFE /* Login-Flipgrid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Login-Flipgrid.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		89864B9027AC7B92003CAAFE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		89864B9227AC7B92003CAAFE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		89864B9427AC7B92003CAAFE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		89864B9427AC7B92003CAAFE /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		89864B9727AC7B92003CAAFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		89864B9927AC7B93003CAAFE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		89864B9C27AC7B93003CAAFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -192,7 +192,7 @@
 		89864BC027AC9CE5003CAAFE /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				89864B9427AC7B92003CAAFE /* ViewController.swift */,
+				89864B9427AC7B92003CAAFE /* MainViewController.swift */,
 				892520F527AE2AE100503EDF /* ConfirmationViewController.swift */,
 			);
 			path = ViewController;
@@ -393,7 +393,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				89864B9527AC7B92003CAAFE /* ViewController.swift in Sources */,
+				89864B9527AC7B92003CAAFE /* MainViewController.swift in Sources */,
 				89864BCA27AD895D003CAAFE /* LoginButton.swift in Sources */,
 				892520EF27ADF76D00503EDF /* LoginUILabel.swift in Sources */,
 				89864BC427AC9D8C003CAAFE /* LoginTextField.swift in Sources */,
@@ -413,7 +413,7 @@
 				892520F727AE2AE100503EDF /* ConfirmationViewController.swift in Sources */,
 				892520F427ADFF9000503EDF /* Constants.swift in Sources */,
 				892520F027ADF76D00503EDF /* LoginUILabel.swift in Sources */,
-				8996A47E27B47406008C0125 /* ViewController.swift in Sources */,
+				8996A47E27B47406008C0125 /* MainViewController.swift in Sources */,
 				89864BA827AC7B93003CAAFE /* Login_FlipgridTests.swift in Sources */,
 				89864BCB27AD895D003CAAFE /* LoginButton.swift in Sources */,
 				89864BC527AC9D8C003CAAFE /* LoginTextField.swift in Sources */,
@@ -431,7 +431,7 @@
 				8996A48727B4A0C6008C0125 /* MainViewControllerUIElements.swift in Sources */,
 				8996A48927B4A1D4008C0125 /* Utility.swift in Sources */,
 				8996A48127B4740F008C0125 /* User.swift in Sources */,
-				8996A47F27B47407008C0125 /* ViewController.swift in Sources */,
+				8996A47F27B47407008C0125 /* MainViewController.swift in Sources */,
 				8996A48B27B4A322008C0125 /* ConfirmationViewControllerUIElements.swift in Sources */,
 				8996A48527B4741D008C0125 /* Constants.swift in Sources */,
 				8996A48427B47419008C0125 /* LoginUILabel.swift in Sources */,

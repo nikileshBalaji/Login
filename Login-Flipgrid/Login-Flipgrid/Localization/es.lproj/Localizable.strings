@@ -8,7 +8,7 @@
 "profileCreationHeaderText" = "Creación de perfil";
 "profileCreationHelperText" = "Utilice el siguiente formulario para enviar su cartera. Se requiere un correo electrónico y una contraseña.";
 "profileCreationFirstName"  = "Primer nombre";
-"profileCreationEmailAddres" = "Dirección de correo electrónico";
+"profileCreationEmailAddress" = "Dirección de correo electrónico";
 "profileCreationPassword" = "Contraseña";
 "profileCreationWebsite"  = "Sitio web";
 "submitButton" = "Entregar";
