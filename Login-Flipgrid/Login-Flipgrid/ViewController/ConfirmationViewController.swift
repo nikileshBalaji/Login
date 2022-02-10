@@ -8,7 +8,7 @@
 import UIKit
 
 class ConfirmationViewController: UIViewController {
-
+    
     
     @IBOutlet weak var confirmationHeaderLabel: LoginUILabel!
     @IBOutlet weak var confirmationHelperLabel: LoginUILabel!
@@ -17,11 +17,11 @@ class ConfirmationViewController: UIViewController {
     @IBOutlet weak var userEmailLabel: LoginUILabel!
     @IBOutlet weak var signinButton: LoginButton!
     
-    
     @IBOutlet weak var userInfoDisplayStackView: UIStackView!
+    @IBOutlet weak var signInButtonTopConstraint: NSLayoutConstraint!
+    
     var user: User?
     
-    @IBOutlet weak var signInButtonTopConstraint: NSLayoutConstraint!
     var originalHeight = 0.0
     
     override func viewWillAppear(_ animated: Bool) {
@@ -38,7 +38,7 @@ class ConfirmationViewController: UIViewController {
                                        withText: LocalizationString.localization(stringID: Constants.ApplicationContent.LoginConfirmationHeader).replacingOccurrences(of: "%s", with: user?.userName ?? ""))
         confirmationHelperLabel.update(labelTextcolor: Constants.ApplicationColor.loginHelperTextColor,
                                        font: nil, withText: LocalizationString.localization(stringID:
-                                                        Constants.ApplicationContent.LoginConfirmationHelperText))
+                                                                                                Constants.ApplicationContent.LoginConfirmationHelperText))
         userNameLabel.update(labelTextcolor: nil, font: nil, withText: user?.userName ?? "")
         userEmailLabel.update(labelTextcolor: nil, font: nil, withText: user?.emailAddress ?? "")
     }
@@ -65,7 +65,7 @@ class ConfirmationViewController: UIViewController {
     func setupButton() {
         signinButton.cornerRadius = signinButton.frame.size.height / 5
         signinButton.setTitle(LocalizationString.localization(stringID:
-                                        Constants.ApplicationContent.signIn), for: .normal)
+                                                                Constants.ApplicationContent.signIn), for: .normal)
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.1, execute: {
             self.updateButtonConstraints()
         })
@@ -85,7 +85,7 @@ class ConfirmationViewController: UIViewController {
         //  UIDevice.current.orientation.isPortrait does not give expected result.
         if let windowScene = self.view.window?.windowScene,
            ((windowScene.interfaceOrientation.isPortrait && UIDevice.current.userInterfaceIdiom == .phone) ||
-        (UIDevice.current.userInterfaceIdiom == .pad)) {
+            (UIDevice.current.userInterfaceIdiom == .pad)) {
             if (userInputcontentView < mainview) {
                 originalHeight = signInButtonTopConstraint.constant
                 signInButtonTopConstraint.constant = finalHeight

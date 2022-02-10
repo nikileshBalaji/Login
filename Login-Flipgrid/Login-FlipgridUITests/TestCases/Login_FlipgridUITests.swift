@@ -8,7 +8,7 @@
 import XCTest
 
 class Login_FlipgridUITests: XCTestCase {
-
+    
     var mainViewControllerUIElements: MainViewControllerUIElements!
     var confirmationViewControllerUIElements: ConfirmationViewControllerUIElements!
     var dummyUser = User(name: "Nikilesh", email: "nbalaji@syr.edu",
@@ -67,7 +67,7 @@ class Login_FlipgridUITests: XCTestCase {
         XCTAssertEqual(confirmationViewControllerUIElements.userNameLabel.label, dummyUser.userName!, "ConfirmationVC NO Name")
         
         app.buttons[Utility.localized(Constants.ApplicationContent.signIn)].tap()
-       
+        
         XCUIDevice.shared.orientation = .landscapeRight
         sleep(1)
         app.buttons[Utility.localized(Constants.ApplicationContent.submitButton)].tap()

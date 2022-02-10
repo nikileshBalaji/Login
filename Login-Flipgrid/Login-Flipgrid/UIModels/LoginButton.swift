@@ -15,7 +15,7 @@ class LoginButton: UIButton {
     let startColor = UIColor(red: 232/255, green: 92/255, blue: 44/255, alpha: 1).cgColor
     let middleColor = UIColor(red: 231/255, green: 77/255, blue: 56/255, alpha: 1).cgColor
     let endColor = UIColor(red: 230/255, green: 59/255, blue: 89/255, alpha: 1).cgColor
-   
+    
     /// set corner radius
     var cornerRadius: CGFloat?
     
@@ -25,7 +25,7 @@ class LoginButton: UIButton {
     override init(frame: CGRect){
         super.init(frame: frame)
     }
-
+    
     required init?(coder: NSCoder) {
         super.init(coder: coder)
     }
@@ -42,7 +42,7 @@ class LoginButton: UIButton {
         gradient.startPoint = CGPoint(x: 0, y: 0.5)
         gradient.endPoint = CGPoint(x: 1, y: 0.5)
         self.layer.insertSublayer(gradient, at: 0)
-
+        
         self.clipsToBounds = true
         self.layer.cornerRadius = cornerRadius ?? 0
     }

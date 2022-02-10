@@ -29,9 +29,9 @@ class LoginTextField: UITextField, UITextFieldDelegate {
     var secureText: Bool = false
     
     override init(frame: CGRect){
-            super.init(frame: frame)
+        super.init(frame: frame)
     }
-
+    
     required init?(coder: NSCoder) {
         super.init(coder: coder)
     }
@@ -47,9 +47,9 @@ class LoginTextField: UITextField, UITextFieldDelegate {
         self.layer.borderColor = borderColor
         self.layer.borderWidth = borderWidth
         self.attributedPlaceholder = NSAttributedString(string: placeHolderText,
-                                attributes: [NSAttributedString.Key.foregroundColor:
-                                UIColor.init(displayP3Red: 105/255, green: 105/255, blue: 105/255, alpha: 1),
-                                NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 16) ])
+                                                        attributes: [NSAttributedString.Key.foregroundColor:
+                                                                        UIColor.init(displayP3Red: 105/255, green: 105/255, blue: 105/255, alpha: 1),
+                                                                     NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 16) ])
         self.font = UIFont.boldSystemFont(ofSize: 16)
         self.isSecureTextEntry = secureText
         self.delegate = self
