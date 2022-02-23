@@ -12,7 +12,7 @@ class Login_FlipgridUITests: XCTestCase {
     var mainViewControllerUIElements: MainViewControllerUIElements!
     var confirmationViewControllerUIElements: ConfirmationViewControllerUIElements!
     var dummyUser = User(name: "Nikilesh", email: "nbalaji@syr.edu",
-                         password: "6204161718#Wel", website: "https://www.linkedin.com/in/nikileshb/")!
+                         password: "6204161718#Wel", website: "https://www.linkedin.com/in/nikileshb")!
     
     override func setUpWithError() throws {
         continueAfterFailure = false
@@ -31,21 +31,21 @@ class Login_FlipgridUITests: XCTestCase {
         
         mainViewControllerUIElements.firstNameTextField.tap()
         mainViewControllerUIElements.firstNameTextField.typeText(dummyUser.userName ?? "")
-        XCUIApplication().keyboards.buttons["return"].tap()
+        dismissKeyboardIfPresent(app)
         
         mainViewControllerUIElements.emailTextField.tap()
         mainViewControllerUIElements.emailTextField.typeText(dummyUser.emailAddress ?? "")
-        XCUIApplication().keyboards.buttons["return"].tap()
+        dismissKeyboardIfPresent(app)
         
         XCUIDevice.shared.orientation = .landscapeRight
         
         mainViewControllerUIElements.websiteTextField.tap()
         mainViewControllerUIElements.websiteTextField.typeText(dummyUser.website.0 ?? "")
-        XCUIApplication().keyboards.buttons["return"].tap()
+        dismissKeyboardIfPresent(app)
         
         mainViewControllerUIElements.passwordTextField.tap()
         mainViewControllerUIElements.passwordTextField.typeText("6204161718#Wel")
-        XCUIApplication().keyboards.buttons["return"].tap()
+        dismissKeyboardIfPresent(app)
         
         XCUIDevice.shared.orientation = .portrait
         
@@ -87,7 +87,7 @@ class Login_FlipgridUITests: XCTestCase {
         
         mainViewControllerUIElements.firstNameTextField.tap()
         mainViewControllerUIElements.firstNameTextField.typeText(dummyUser.userName ?? "")
-        XCUIApplication().keyboards.buttons["return"].tap()
+        dismissKeyboardIfPresent(app)
         
         XCUIDevice.shared.orientation = .landscapeRight
         
@@ -96,7 +96,7 @@ class Login_FlipgridUITests: XCTestCase {
         
         mainViewControllerUIElements.emailTextField.tap()
         mainViewControllerUIElements.emailTextField.typeText(dummyUser.emailAddress ?? "")
-        XCUIApplication().keyboards.buttons["return"].tap()
+        dismissKeyboardIfPresent(app)
         
         XCUIDevice.shared.orientation = .portrait
         
@@ -105,7 +105,7 @@ class Login_FlipgridUITests: XCTestCase {
         
         mainViewControllerUIElements.websiteTextField.tap()
         mainViewControllerUIElements.websiteTextField.typeText(dummyUser.website.0 ?? "")
-        XCUIApplication().keyboards.buttons["return"].tap()
+        dismissKeyboardIfPresent(app)
         
         XCUIDevice.shared.orientation = .landscapeRight
         
@@ -114,12 +114,22 @@ class Login_FlipgridUITests: XCTestCase {
         
         mainViewControllerUIElements.passwordTextField.tap()
         mainViewControllerUIElements.passwordTextField.typeText("6204161718#Wel")
-        XCUIApplication().keyboards.buttons["return"].tap()
+        dismissKeyboardIfPresent(app)
         
         XCUIDevice.shared.orientation = .portrait
         
         app.buttons[Utility.localized(Constants.ApplicationContent.submitButton)].tap()
         app.buttons[Utility.localized(Constants.ApplicationContent.signIn)].tap()
+    }
+    
+    func dismissKeyboardIfPresent(_ app: XCUIApplication) {
+        if app.keyboards.element(boundBy: 0).exists {
+            if UIDevice.current.userInterfaceIdiom == .pad {
+                app.keyboards.buttons["Hide keyboard"].tap()
+            } else {
+                app.toolbars.buttons["Done"].tap()
+            }
+        }
     }
     
 }
